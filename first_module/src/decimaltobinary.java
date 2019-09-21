@@ -2,7 +2,9 @@ import java.util.Scanner;
 
 public class decimaltobinary {
     public static void main(String[] args){
-        int deci = 255;
+        Scanner S = new Scanner(System.in);
+        int deci = S.nextInt();
+        int deci2 = deci;
         String fin = "";
         int digit = 0;
         while(deci!=1){
@@ -13,7 +15,6 @@ public class decimaltobinary {
         fin = "1" + fin;
         System.out.println(fin);
         //OR
-        int decimal2 = 255;
-        System.out.println(Integer.toBinaryString(decimal2));
+        System.out.println(Integer.toBinaryString(deci2));
     }
 }
