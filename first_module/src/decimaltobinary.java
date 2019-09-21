@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class decimaltobinary {
     public static void main(String[] args){
-        int decimal = 255;
+        int deci = 255;
         String fin = "";
         int digit = 0;
-        while(decimal!=1){
-            digit = decimal%2;
+        while(deci!=1){
+            digit = deci%2;
             fin = Integer.toString(digit) + fin;
-            decimal = decimal/2;
+            deci = deci/2;
         }
         fin = "1" + fin;
         System.out.println(fin);
